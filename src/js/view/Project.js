@@ -12,7 +12,7 @@ export default function Projects(props) {
       <p>A minecraft themed matching game</p>
       {/* <br/> */}
       <div>
-        Check out the <a href="https://bchu.dev/Minecraft-Munch">game</a>
+        Check out the <a href="https://bchu007.github.io/Minecraft-Munch/">game</a>
       </div>
       <div>
         and the <a href="https://github.com/bchu007/Minecraft-Munch">code</a>

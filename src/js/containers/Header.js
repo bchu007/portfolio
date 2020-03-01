@@ -4,7 +4,7 @@ import headerImg from '../../assets/images/webicon.png'
 import { Route, Link, BrowserRouter as Router, Switch, useLocation} from 'react-router-dom'
 import * as S from '../../css/styles'
 import NavLink from '../components/NavLink'
-
+import pdf from '../../assets/pdf/brian_chu_2020_resume.pdf'
 
 export default function Header() {
 
@@ -27,9 +27,7 @@ export default function Header() {
                   <Link to="/projects">
                     <S.Link>PROJECTS</S.Link>
                   </Link>
-                  <Link to="/resume">
-                    <S.Link>RESUME</S.Link>
-                  </Link>
+                  <S.Link><a href={pdf} target='_blank'>RESUME</a></S.Link>
                   <Link to="/contact">
                     <S.Link>CONTACT</S.Link>
                   </Link>
@@ -49,9 +47,7 @@ export default function Header() {
                     <Link to="/projects">
                       <S.Link>PROJECTS</S.Link>
                     </Link>
-                    <Link to="/resume">
-                      <S.Link>RESUME</S.Link>
-                    </Link>
+                    <S.Link><a href={pdf} target='_blank'>RESUME</a></S.Link>
                     <Link to="/contact">
                       <S.Link>CONTACT</S.Link>
                     </Link>
