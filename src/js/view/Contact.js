@@ -11,7 +11,7 @@ import { useGoogleLogin } from 'react-google-login'
 export default function Contact(props) {
 
   const signup = () => {
-    alert(`User Created!
+    alert(`Todo: create mail backend
          Name: ${inputs.firstName} ${inputs.lastName}
          Email: ${inputs.email}
          Subject: ${inputs.subject}

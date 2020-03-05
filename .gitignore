@@ -1,0 +1,13 @@
+# binaries
+bin/
+dist/
+lib/
+
+#dependency packages
+node_modules
+
+#editors
+.vscode/
+
+#config files
+.config
