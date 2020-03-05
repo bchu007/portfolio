@@ -46,11 +46,11 @@ export default function Projects(props) {
 
           props.Mobile ? (
             <a href="https://bchu007.github.io/FrogridersOnline/">
-              <S.ProjectCard mobile src={'https://i.imgur.com/yT6lLBa.png'} />
+              <S.ProjectCard mobile src={'https://i.imgur.com/xOY9qJF.jpg'} />
             </a>
           ) : (
               <a href="https://bchu007.github.io/FrogridersOnline/">
-                <S.ProjectCard src={'https://i.imgur.com/yT6lLBa.png'} />
+                <S.ProjectCard src={'https://i.imgur.com/xOY9qJF.jpg'} />
               </a>
             )
         }
