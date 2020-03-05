@@ -6,18 +6,22 @@ import img from '../../assets/images/icon.png'
 
 export default function Home(props) {
 
+
   return (
-    <S.Content>
+    <React.Fragment>
         <h1>
           Brian Chu
         </h1>
         <p>
           Hi, this is my web development portolio and website. <br/>
-          Check out my projects on github. <br/>
+          Check out my projects on <a href="https://github.com/bchu007">GitHub</a>. <br/>
         </p>
+        <br />
         <p>
-          If you have any questions hit me up in the contact section.
+          Enthusiast in media, finance, data, food and agriculture.
+          Dislikes the overuse of emojis.
+          
         </p>
-    </S.Content>
+    </React.Fragment>
   )
 }

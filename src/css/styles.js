@@ -1,48 +1,110 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, keyframes } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Oxygen|Oxygen|Roboto|Montserrat|Roboto+Mono|VT323&display=swap');
 `
 
 export const MobileHeader = styled.div`
+  background-color: #F1F1F1;
+  overflow: hidden;
+  padding: 6px;
+  float: right;
+  text-align: left;
+  font-family: ${props => props.fontFamily.main};
+  height: 100vh;
+  width: 30vw;
+  background-color: #F1F1F1;
+  font-size: 11pt;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  @media (max-width: 333px) {
+    padding: 3px;
+  }
+`
+MobileHeader.defaultProps = {
+    fontFamily: {
+    main: "IBM Plex Sans"
+    }
+}
+export const DesktopHeader = styled.div`
   background-color: #F1F1F1;
   overflow: hidden;
   padding: 15px;
   float: left;
   text-align: right;
   font-family: ${props => props.fontFamily.main};
+  font-size: 14pt;
   height: 100vh;
   width: 20vw;
-  background-color: red;
-`
-MobileHeader.defaultProps = {
-    fontFamily: {
-      main: "Montserrat"
-    }
-}
-export const DesktopHeader = styled.div`
-  background-color: #F1F1F1;
-  overflow: hidden;
-  float: left;
-  text-align: right;
-  font-family: ${props => props.fontFamily.main};
-  height: 100vh;
-  width: 20vw;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  @media (max-width: 690px) {
+    text-align: left;
+  }
 `
 DesktopHeader.defaultProps = {
   fontFamily: {
-    main: "Montserrat"
+    main: "IBM Plex Sans"
   }
 }
-export const Link = styled.div`
+export const MobileLink = styled.div`
   display: block;
   padding-top: 10px;
-  font-family: 'Montserrat';
+  font-family: 'IBM Plex Sans';
+  font-weight: 'light';
   color: black;
   text-decoration: underline;
+  font-size: 9pt;
+  text-decoration-color: white;
+  &:hover {
+    text-decoration-color: black;
+  }
+`
+export const MobileFileLink = styled.a`
+  display: block;
+  padding-top: 10px;
+  font-family: 'IBM Plex Sans';
+  font-weight: 'light';
+  color: black;
+  text-decoration: underline;
+  font-size: 9pt;
+  text-decoration-color: white;
+  &:hover {
+    text-decoration-color: black;
+  }
+
+`
+export const DesktopLink = styled.div`
+  display: block;
+  padding-top: 10px;
+  font-family: 'IBM Plex Sans';
+  font-weight: 'light';
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: white;
   font-size: 12pt;
+  &:hover {
+    text-decoration-color: black;
+  }
+
+`
+
+export const DesktopFileLink = styled.a`
+  display: block;
+  padding-top: 10px;
+  font-family: 'IBM Plex Sans';
+  font-weight: 'light';
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: white;
+  font-size: 12pt;
+  &:hover {
+    text-decoration-color: black;
+  }
 `
 export const NavLinkContainer = styled.div`
   padding-top: 20px;
@@ -51,20 +113,30 @@ export const NavLinkContainer = styled.div`
 `
 export const HeaderImageWrapper = styled.div`
   padding: 15px;
+  padding-top: 50px;
 `
-export const NotFoundWrapper = styled.div`
-  background-color: grey;
-  width: 80vw;
-  height: 100vh;
-  float: right;
-  vertical-align: top;
+
+export const NotFoundContent = styled.div`
+  margin: 0px;
 
 `
-export const NotFoundContentWrapper = styled.div`
-  background-color: grey;
-  margin: 30px;
+export const MobileContent = styled.div`
+  height: 100vh;
+  width: 70vw;
+  vertical-align: top;
+  float: left;
+  background-color: ghostwhite;
+  padding: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Oxygen';
+  overflow: scroll;
+  overflow-x: hidden;
+
 `
-export const Content = styled.div`
+
+export const DesktopContent = styled.div`
   height: 100vh;
   width: 80vw;
   vertical-align: top;
@@ -74,6 +146,10 @@ export const Content = styled.div`
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: 'Oxygen';
+  overflow: scroll;
+  overflow-x: hidden;
+
 `
 
 export const Phone = styled.a`
@@ -86,4 +162,56 @@ export const Email = styled.a`
 
 export const Download = styled.a`
 
+`
+export const FormElement = styled.div`
+  margin-top: 7px;
+`
+export const Required = styled.span`
+  color: red;
+`
+export const Icons = styled.div`
+  margin-top: 10px;
+`
+export const SingleIcon = styled.span`
+  margin-right: 4px;
+  opacity: 20%;
+`
+const blinker = keyframes`
+ from { opacity: 1.0; } to { opacity: 0.0; }
+`
+
+export const Logo = styled.span`
+  font-size: 19px;
+  color: white;
+  background-color: black;
+  font-family: 'VT323';
+  height: 40px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 15px;
+`
+
+export const TextCursor = styled.span`
+  animation-name: ${blinker};
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1,0,0,1);
+  animation-duration: 1s;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(white,.3);
+  height: 18px;
+  width: 2px;
+  margin-left: 0;
+  background-color: white;
+`
+export const ProjectCard = styled.img`
+
+  width: ${props => props.mobile ? "60vw" : "500px"};
+
+`
+export const ProjectContainer = styled.div`
+  margin: 4px;
+  margin-bottom: 40px;
 `
