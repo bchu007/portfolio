@@ -5,8 +5,6 @@ import * as S from '../../css/styles'
 import img from '../../assets/images/icon.png'
 
 export default function Home(props) {
-
-
   return (
     <React.Fragment>
         <h1>
@@ -17,7 +15,6 @@ export default function Home(props) {
           Check out my projects on <a href="https://github.com/bchu007">GitHub</a>. <br/>
         </p>
         <br />
-        
     </React.Fragment>
   )
 }
