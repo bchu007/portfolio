@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import { Route, Link, BrowserRouter as Router, Switch, useLocation} from 'react-router-dom'
 import headerImg from '../../assets/images/blogo100.jpg'
@@ -8,20 +8,47 @@ import Home from '../view/Home'
 import Projects from '../view/Project'
 import Contact from '../view/Contact'
 import NotFound from '../view/NotFound'
-
-
+import Mobile from '../functions/mobile-check'
 
 function App() {
+  const [mobile, setMobile] = useState(false)
+  var handleResize = () => {
+    if(Mobile()) {
+      setMobile(true);
+    }
+    else {
+      setMobile(false);
+    }
+  };
+  React.useEffect(() => {
+    window.addEventListener('resize', handleResize)
+  });
 
   return (
     <Router>
       <Head />
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/projects' component={Projects} />
-        <Route exact path='/contact' component={Contact} />
-        <Route component={NotFound} />
-      </Switch>
+      {
+        Mobile() ? (
+          <S.MobileContent>
+            <Switch>
+              <Route exact path='/' render={() => <Home Mobile={mobile}/>} />
+              <Route exact path='/projects' render={() => <Projects Mobile={mobile}/>} />
+              <Route exact path='/contact' render={() => <Contact Mobile={mobile}/>} />
+              <Route render={() => <NotFound Mobile={mobile}/>} />
+            </Switch>
+          </S.MobileContent>
+        ) : (
+            <S.DesktopContent>
+              <Switch>
+                <Route exact path='/' render={() => <Home Mobile={mobile}/>} />
+                <Route exact path='/projects' render={() => <Projects Mobile={mobile}/>} />
+                <Route exact path='/contact' render={() => <Contact Mobile={mobile}/>} />
+                <Route render={() => <NotFound Mobile={mobile}/>} />
+              </Switch>
+            </S.DesktopContent>
+        )
+      }
+
     </Router>
 
   )

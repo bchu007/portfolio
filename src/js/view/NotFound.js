@@ -9,29 +9,18 @@ export default function NotFound(props) {
 
   return (
 
-    <div>
-      <S.NotFoundWrapper>
-        <S.NotFoundContentWrapper>
-          <img src={errorimage} />
+    <React.Fragment>
+        <S.NotFoundContent>
+        <img src={errorimage} style={{ 'max-width': '100%', 'opacity': '30%'}} />
 
           <h1>Page Not Found</h1>
           <p>We can't find the page you're looking for.</p>
           <p>You can either return to the previous page,
         visit our home page, <br/> or contact the support team</p>
-        </S.NotFoundContentWrapper>
-      </S.NotFoundWrapper>
 
-      {/* <S.NotFoundWrapper>
-        <S.NotFoundContentWrapper>
 
-        </S.NotFoundContentWrapper>
-        <S.NotFoundContentWrapper>
-
-          <Button color="blue">Visit Homepage</Button>
-          <Button>Contact Us</Button>
-        </S.NotFoundContentWrapper>
-      </S.NotFoundWrapper> */}
-    </div>
+        </S.NotFoundContent>
+    </React.Fragment>
 
 
   )
