@@ -17,11 +17,7 @@ export default function Home(props) {
           Check out my projects on <a href="https://github.com/bchu007">GitHub</a>. <br/>
         </p>
         <br />
-        <p>
-          Enthusiast in media, finance, data, food and agriculture.
-          Dislikes the overuse of emojis.
-          
-        </p>
+        
     </React.Fragment>
   )
 }
