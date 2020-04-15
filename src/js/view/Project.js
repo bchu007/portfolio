@@ -69,6 +69,36 @@ export default function Projects(props) {
           <I.CssIcon />
         </S.Icons>
       </S.ProjectContainer>
+
+
+      <S.ProjectContainer className="Tko">
+        {
+
+          props.Mobile ? (
+            <a href="https://tko.bchu.dev">
+              <S.ProjectCard mobile src={'https://i.imgur.com/DdfszMB.png'} />
+            </a>
+          ) : (
+              <a href="https://tko.bchu.dev">
+                <S.ProjectCard src={'https://i.imgur.com/DdfszMB.png'} />
+              </a>
+            )
+        }
+
+        <h2>Tko Store</h2>
+        <p>Ecommerce store for Taiko Equiptment!</p>
+        <div>
+          Check out the <a href="https://tko.bchu.dev">game</a>
+        </div>
+        <div>
+          and the <a href="https://tko.bchu.dev">code</a>
+        </div>
+        <S.Icons>
+          <I.JsIcon />
+          <I.HtmlIcon />
+          <I.CssIcon />
+        </S.Icons>
+      </S.ProjectContainer>
     </React.Fragment>
   )
 }
