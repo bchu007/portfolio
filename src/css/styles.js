@@ -16,6 +16,7 @@ export const MobileHeader = styled.div`
   width: 30vw;
   background-color: #F1F1F1;
   font-size: 11pt;
+  box-shadow: -15px 0 15px -15px inset;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -29,6 +30,7 @@ MobileHeader.defaultProps = {
     }
 }
 export const DesktopHeader = styled.div`
+  box-shadow: -15px 0 15px -15px inset;
   background-color: #F1F1F1;
   overflow: hidden;
   padding: 15px;
@@ -216,7 +218,7 @@ export const ProjectContainer = styled.div`
   margin-bottom: 40px;
 `
 export const Landing = styled.div`
-  height: 80vh;
+  height: 90vh;
   background: 100px;
   background-position: left top;
   background-repeat:no-repeat;
