@@ -215,3 +215,28 @@ export const ProjectContainer = styled.div`
   margin: 4px;
   margin-bottom: 40px;
 `
+export const Landing = styled.div`
+  height: 80vh;
+  background: 100px;
+  background-position: left top;
+  background-repeat:no-repeat;
+  background-size: auto;
+  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
+`
+
+export const HomeContentWrapper = styled.div`
+  height: 80%;
+  width: 70%;
+  position: absolute;
+  top: -5px;
+  margin: 20px;
+  padding: 5px;
+  padding-right: 30px;
+  color: white;
+`;
+
+export const HomeWrapper = styled.div`
+  height: 100%;
+  width: 100%;
+  position: relative;
+`;
