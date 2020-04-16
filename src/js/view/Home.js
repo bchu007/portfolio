@@ -12,11 +12,11 @@ export default function Home(props) {
         </S.Landing>
         <S.HomeContentWrapper>
           <h1>
-            Brian Chu
+            Hi, I'm Brian Chu
         </h1>
           <p>
-            Hi, this is my web development portolio and website. <br />
-          Check out my projects on <a href="https://github.com/bchu007">GitHub</a>. <br />
+            I'm a full-stack developer. <br />
+            View my profile and expore my on <a style={{color: 'white'}} href="https://github.com/bchu007">GitHub</a>. <br />
           </p>
           <br />
         </S.HomeContentWrapper>
