@@ -242,3 +242,15 @@ export const HomeWrapper = styled.div`
   width: 100%;
   position: relative;
 `;
+
+export const HomeTextWrapper = styled.div`
+  font-size: 1.2em;
+`;
+
+export const NasaBadge = styled.a`
+  position: relative;
+`;
+
+export const NasaBadgeWrapper = styled.div`
+  margin: 10px 0px;
+`;
