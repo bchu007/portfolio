@@ -22,9 +22,9 @@ export default function Header() {
         mobile() ? (
           <S.MobileHeader>
             <S.HeaderImageWrapper>
-              {/* <Link to="/">
+                  <Link to="/">
                     <img src={headerImg} style={{'max-width': '90%'}} />
-                  </Link> */}
+                  </Link>
               <S.Logo>
                 bchu.dev<S.TextCursor></S.TextCursor>
               </S.Logo>
@@ -46,14 +46,15 @@ export default function Header() {
         ) : (
 
             <S.DesktopHeader onLoad={() => console.log(color)} style={{ "background-color": color }}>
-              <S.HeaderImageWrapper>
-                {/* <Link to="/">
+              {/* <S.HeaderImageWrapper>
+                 <Link to="/">
                       <img src={headerImg} />
-                    </Link> */}
+                    </Link>
                 <S.Logo>
                   bchu.dev<S.TextCursor></S.TextCursor>
                 </S.Logo>
-              </S.HeaderImageWrapper>
+              </S.HeaderImageWrapper> */}
+              <S.ProfilePicture src={'https://i.imgur.com/CvCBdCN.jpg'} />
               <S.NavLinkContainer>
                 <Link to="/">
                   <S.DesktopLink>HOME</S.DesktopLink>
@@ -66,12 +67,6 @@ export default function Header() {
                   <S.DesktopLink>CONTACT</S.DesktopLink>
                 </Link>
               </S.NavLinkContainer>
-              <SketchPicker style={{ 'position': 'absolute', 'right': '0' }} color={color}
-                onChangeComplete={(color) => setColor(color.hex)} />
-
-
-              <S.ProfilePicture src={'https://i.imgur.com/CvCBdCN.jpg'} />
-
             </S.DesktopHeader>
           )
       }

@@ -36,7 +36,7 @@ export const DesktopHeader = styled.div`
   overflow: hidden;
   padding: 15px;
   float: left;
-  text-align: right;
+  text-align: center;
   font-family: ${props => props.fontFamily.main};
   font-size: 14pt;
   height: 100vh;
@@ -73,7 +73,7 @@ export const MobileFileLink = styled.a`
   padding-top: 10px;
   font-family: 'IBM Plex Sans';
   font-weight: 'light';
-  color: black;
+  color: white;
   text-decoration: underline;
   font-size: 9pt;
   text-decoration-color: black;
@@ -117,8 +117,6 @@ export const NavLinkContainer = styled.div`
 `
 export const HeaderImageWrapper = styled.div`
   padding: 15px;
-  padding-top: 20vh;
-
 `
 
 export const NotFoundContent = styled.div`
@@ -261,12 +259,12 @@ export const NasaBadgeWrapper = styled.div`
 
 export const ProfilePicture = styled.img`
   width: auto;
-  max-width: 150px;
+  max-width: 15vmin;
   height: auto;
-  max-height: 150px;
-  margin: 30px;
+  max-height: 15vmin;
+  margin: 0 auto;
   border-radius: 75px;
-  position: absolute;
-  top: 0;
-  right: 0;
+  margin-top: 20px;
+
+
 `;
