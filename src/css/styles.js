@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
 `
 
 export const MobileHeader = styled.div`
-  background-color: #F1F1F1;
+  background-color: #061329;
   overflow: hidden;
   padding: 6px;
   float: right;
@@ -14,7 +14,7 @@ export const MobileHeader = styled.div`
   font-family: ${props => props.fontFamily.main};
   height: 100vh;
   width: 30vw;
-  background-color: #F1F1F1;
+  background-color: #251A72;
   font-size: 11pt;
   box-shadow: -15px 0 15px -15px inset;
   -moz-box-sizing: border-box;
@@ -32,7 +32,7 @@ MobileHeader.defaultProps = {
 }
 export const DesktopHeader = styled.div`
   box-shadow: -15px 0 15px -15px inset;
-  background-color: #F1F1F1;
+  background-color: #061329;
   overflow: hidden;
   padding: 15px;
   float: left;
@@ -60,12 +60,12 @@ export const MobileLink = styled.div`
   padding-top: 10px;
   font-family: 'IBM Plex Sans';
   font-weight: 'light';
-  color: black;
+  color: white;
   text-decoration: underline;
   font-size: 9pt;
-  text-decoration-color: white;
+  text-decoration-color: black;
   &:hover {
-    text-decoration-color: black;
+    text-decoration-color: white;
   }
 `
 export const MobileFileLink = styled.a`
@@ -87,12 +87,12 @@ export const DesktopLink = styled.div`
   padding-top: 10px;
   font-family: 'IBM Plex Sans';
   font-weight: 'light';
-  color: black;
+  color: white;
   text-decoration: underline;
-  text-decoration-color: white;
+  text-decoration-color: black;
   font-size: 12pt;
   &:hover {
-    text-decoration-color: black;
+    text-decoration-color: white;
   }
 
 `
@@ -102,12 +102,12 @@ export const DesktopFileLink = styled.a`
   padding-top: 10px;
   font-family: 'IBM Plex Sans';
   font-weight: 'light';
-  color: black;
+  color: white;
   text-decoration: underline;
-  text-decoration-color: white;
+  text-decoration-color: black;
   font-size: 12pt;
   &:hover {
-    text-decoration-color: black;
+    text-decoration-color: white;
   }
 `
 export const NavLinkContainer = styled.div`
@@ -187,7 +187,7 @@ const blinker = keyframes`
 export const Logo = styled.span`
   font-size: 19px;
   color: white;
-  background-color: black;
+  background-color: grey;
   font-family: 'VT323';
   height: 40px;
   text-align: center;

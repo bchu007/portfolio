@@ -70,7 +70,7 @@ export default function Header() {
                 onChangeComplete={(color) => setColor(color.hex)} />
 
 
-              <S.ProfilePicture src={'https://i.imgur.com/X4eviRy.jpg'} />
+              <S.ProfilePicture src={'https://i.imgur.com/EbJ43LL.jpg'} />
 
             </S.DesktopHeader>
           )
