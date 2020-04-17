@@ -11,7 +11,7 @@ import Mobile from '../functions/mobile-check'
 export default function Projects(props) {
   return (
 
-    <React.Fragment>
+    <S.ContentWrapper>
       <S.ProjectContainer className="MinecraftMunch">
         {
 
@@ -99,6 +99,6 @@ export default function Projects(props) {
           <I.CssIcon />
         </S.Icons>
       </S.ProjectContainer>
-    </React.Fragment>
+    </S.ContentWrapper>
   )
 }

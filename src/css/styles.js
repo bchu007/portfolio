@@ -129,7 +129,7 @@ export const MobileContent = styled.div`
   vertical-align: top;
   float: left;
   background-color: ghostwhite;
-  padding: 20px;
+  /* padding: 20px; */
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -145,7 +145,7 @@ export const DesktopContent = styled.div`
   vertical-align: top;
   float: right;
   background-color: ghostwhite;
-  padding: 30px;
+  /* padding: 30px; */
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -154,7 +154,9 @@ export const DesktopContent = styled.div`
   overflow-x: hidden;
 
 `
-
+export const ContentWrapper = styled.div`
+  padding: 30px;
+`;
 export const Phone = styled.a`
 
 `
@@ -220,11 +222,12 @@ export const ProjectContainer = styled.div`
   margin-bottom: 40px;
 `
 export const Landing = styled.div`
-  height: 90vh;
+  height: 100vh;
+  width: 80vw;
   background: 100px;
   background-position: left top;
   background-repeat:no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
 `
 
@@ -233,15 +236,14 @@ export const HomeContentWrapper = styled.div`
   width: 70%;
   position: absolute;
   top: -5px;
-  margin: 20px;
-  padding: 5px;
+  padding: 25px;
   padding-right: 30px;
   color: white;
 `;
 
 export const HomeWrapper = styled.div`
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: 80vw;
   position: relative;
 `;
 
@@ -250,11 +252,13 @@ export const HomeTextWrapper = styled.div`
 `;
 
 export const NasaBadge = styled.a`
-  position: relative;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 `;
 
 export const NasaBadgeWrapper = styled.div`
-  margin: 10px 0px;
+  /* padding: 10px; */
 `;
 
 export const ProfilePicture = styled.img`

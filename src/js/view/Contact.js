@@ -21,7 +21,7 @@ export default function Contact(props) {
   const { inputs, handleInputChange, handleSubmit } = useSignUpForm(signup);
 
   return (
-    <React.Fragment>
+    <S.ContentWrapper>
       <h1>Contact</h1>
       <p>Have a inquiries or thinking about working together? <br />
         Give me a <a href="tel:949-838-7333">call</a>, <a href="mailto:brianchu14@gmail.com">email</a>, or simply leave a message below.
@@ -76,6 +76,6 @@ export default function Contact(props) {
         <input type="submit" name="submit" value="Send" />
       </form>
 
-    </React.Fragment>
+    </S.ContentWrapper>
   )
 }

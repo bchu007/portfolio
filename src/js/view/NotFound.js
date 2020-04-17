@@ -9,7 +9,7 @@ export default function NotFound(props) {
 
   return (
 
-    <React.Fragment>
+    <S.ContentWrapper>
         <S.NotFoundContent>
         <img src={errorimage} style={{ 'max-width': '100%', 'opacity': '30%'}} />
 
@@ -20,7 +20,7 @@ export default function NotFound(props) {
 
 
         </S.NotFoundContent>
-    </React.Fragment>
+    </S.ContentWrapper>
 
 
   )
