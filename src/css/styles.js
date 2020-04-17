@@ -20,6 +20,7 @@ export const MobileHeader = styled.div`
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
   @media (max-width: 333px) {
     padding: 3px;
   }
@@ -43,6 +44,7 @@ export const DesktopHeader = styled.div`
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
 
   @media (max-width: 690px) {
     text-align: left;
@@ -253,4 +255,13 @@ export const NasaBadge = styled.a`
 
 export const NasaBadgeWrapper = styled.div`
   margin: 10px 0px;
+`;
+
+export const ProfilePicture = styled.img`
+  height: 200px;
+  width: 160px;
+  margin: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 `;

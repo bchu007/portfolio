@@ -4,6 +4,7 @@ import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 import * as S from '../../css/styles'
 import img from '../../assets/images/icon.png'
 
+
 export default function Home(props) {
   return (
     <React.Fragment>
