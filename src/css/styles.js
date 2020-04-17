@@ -259,11 +259,11 @@ export const NasaBadgeWrapper = styled.div`
 
 export const ProfilePicture = styled.img`
   width: auto;
-  max-width: 15vmin;
+  max-width: 20vmin;
   height: auto;
-  max-height: 15vmin;
+  max-height: 20vmin;
   margin: 0 auto;
-  border-radius: 75px;
+  border-radius: 10vmin;
   margin-top: 20px;
 
 

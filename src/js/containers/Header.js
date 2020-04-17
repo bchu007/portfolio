@@ -54,7 +54,7 @@ export default function Header() {
                   bchu.dev<S.TextCursor></S.TextCursor>
                 </S.Logo>
               </S.HeaderImageWrapper> */}
-              <S.ProfilePicture src={'https://i.imgur.com/CvCBdCN.jpg'} />
+              <S.ProfilePicture src={'https://i.imgur.com/eHManBS.jpg'} />
               <S.NavLinkContainer>
                 <Link to="/">
                   <S.DesktopLink>HOME</S.DesktopLink>
