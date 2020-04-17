@@ -76,9 +76,9 @@ export const MobileFileLink = styled.a`
   color: black;
   text-decoration: underline;
   font-size: 9pt;
-  text-decoration-color: white;
+  text-decoration-color: black;
   &:hover {
-    text-decoration-color: black;
+    text-decoration-color: white;
   }
 
 `
@@ -117,7 +117,8 @@ export const NavLinkContainer = styled.div`
 `
 export const HeaderImageWrapper = styled.div`
   padding: 15px;
-  padding-top: 50px;
+  padding-top: 20vh;
+
 `
 
 export const NotFoundContent = styled.div`
@@ -185,6 +186,7 @@ const blinker = keyframes`
 `
 
 export const Logo = styled.span`
+  display: none;
   font-size: 19px;
   color: white;
   background-color: grey;
@@ -258,10 +260,13 @@ export const NasaBadgeWrapper = styled.div`
 `;
 
 export const ProfilePicture = styled.img`
-  height: 200px;
-  width: 160px;
+  width: auto;
+  max-width: 150px;
+  height: auto;
+  max-height: 150px;
   margin: 30px;
+  border-radius: 75px;
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
 `;
