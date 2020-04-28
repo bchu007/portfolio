@@ -12,7 +12,9 @@ The site should be running on http://localhost:3000/dist
 the link is also available once the script is completed.
 
 ## Tech stack
-React
-HTML5
-CSS (styled components)
-JavaScript
+React  
+HTML5  
+CSS (styled components)  
+JavaScript  
+Webpack  
+npm  
