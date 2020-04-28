@@ -1,6 +1,7 @@
 # Portfolio
 Personal website built using react
 
+![](https://i.imgur.com/0vjbFRQ.png)
 ## How to Build
 for the repo into your own local computer
 
